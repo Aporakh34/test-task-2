@@ -50,6 +50,24 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@media (max-width: 644px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.responsive-page-bg {
+  background-image: var(--desktop-bg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1108px) {
+  .responsive-page-bg {
+    background-image: var(--mobile-bg);
+  }
+}
+
 button,
 a[href],
 [role="button"],

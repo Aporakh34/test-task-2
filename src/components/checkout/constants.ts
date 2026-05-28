@@ -1,4 +1,22 @@
-import { PaymentMethod, CheckoutFormData } from "@/types";
+import { PaymentMethod } from "@/types";
+
+export interface CheckoutFormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  address: string;
+  city: string;
+  postalCode: string;
+  country: string;
+  paymentMethod: PaymentMethod;
+  cardNumber: string;
+  cardExpiry: string;
+  cardCvc: string;
+}
+
+export interface CheckoutFieldErrors {
+  [key: string]: string;
+}
 
 export const PAYMENT_METHODS: {
   id: PaymentMethod;
@@ -24,7 +42,3 @@ export const INITIAL_CHECKOUT_FORM: CheckoutFormData = {
   cardExpiry: "",
   cardCvc: "",
 };
-
-export interface CheckoutFieldErrors {
-  [key: string]: string;
-}

@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckoutFormData } from "@/types";
-import { INITIAL_CHECKOUT_FORM } from "./constants";
+import { CheckoutFormData, INITIAL_CHECKOUT_FORM } from "./constants";
 
 interface CheckoutSuccessProps {
   formData: CheckoutFormData;

@@ -6,8 +6,8 @@ import { PaymentMethod } from "@/types";
 import { CustomerForm, FieldErrors, PAYMENT_OPTIONS } from "./constants";
 import CreditCardFields from "./CreditCardFields";
 import { BORDER_BUTTON, COLOR_TAN } from "@/components/cart-table/constants";
-import applePayLogo from "@/assets/apple-pay-3.svg";
-import bankTransferLogo from "@/assets/bank_transfer_icon.png";
+import applePayLogo from "@/assets/payment/apple-pay-3.svg";
+import bankTransferLogo from "@/assets/payment/bank_transfer_icon.png";
 
 interface PaymentMethodSectionProps {
   paymentMethod: PaymentMethod;

@@ -14,13 +14,13 @@ export default function CartTableHeader() {
         <TableHeaderCell>Item</TableHeaderCell>
         <TableHeaderCell>
           Quantity<br />
-          <span className="font-bold normal-case text-[13px] xl:text-[14px] tracking-normal">
+          <span className="font-bold normal-case text-[13px] xl:text-[14px] tracking-normal max-[644px]:text-[11px]">
             (sq. ft.)
           </span>
         </TableHeaderCell>
         <TableHeaderCell>
           Unit Price<br />
-          <span className="font-bold normal-case text-[13px] xl:text-[14px] tracking-normal">
+          <span className="font-bold normal-case text-[13px] xl:text-[14px] tracking-normal max-[644px]:text-[11px]">
             ($)
           </span>
         </TableHeaderCell>

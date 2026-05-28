@@ -3,8 +3,8 @@ import { formatCardNumber, formatExpiry } from "./validation";
 import FieldErrorMessage from "./FieldErrorMessage";
 import Image from "next/image";
 import { BORDER_BUTTON, COLOR_CREAM } from "@/components/cart-table/constants";
-import visaLogo from "@/assets/Visa_Inc.-Logo.wine.svg";
-import mastercardLogo from "@/assets/Mastercard-Logo.wine.svg";
+import visaLogo from "@/assets/payment/Visa_Inc.-Logo.wine.svg";
+import mastercardLogo from "@/assets/payment/Mastercard-Logo.wine.svg";
 
 interface CreditCardFieldsProps {
   form: CustomerForm;

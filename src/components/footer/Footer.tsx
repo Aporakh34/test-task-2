@@ -7,7 +7,7 @@ const FOOTER_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="w-full pb-2.5 text-center bg-transparent shrink-0">
+    <footer className="w-full pb-2.5 max-[1108px]:pb-[150px] text-center bg-transparent shrink-0">
       <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-0.5 mb-0.5">
         {FOOTER_LINKS.map((link, index) => (
           <span key={link} className="inline-flex items-center gap-2">

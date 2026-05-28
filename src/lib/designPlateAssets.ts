@@ -1,13 +1,13 @@
 import type { StaticImageData } from "next/image";
-import desigPlate1 from "@/assets/desig_plate1.png";
-import desigPlate2 from "@/assets/desig_plate2.png";
-import desigPlate3 from "@/assets/desig_plate3.png";
-import desigPlate4 from "@/assets/desig_plate4.png";
-import desigPlate5 from "@/assets/desig_plate5.png";
-import desigPlate6 from "@/assets/desig_plate6.png";
-import desigPlate7 from "@/assets/desig_plate7.png";
-import desigPlate8 from "@/assets/desig_plate8.png";
-import desigPlate9 from "@/assets/desig_plate9.png";
+import desigPlate1 from "@/assets/design-plates/desig_plate1.png";
+import desigPlate2 from "@/assets/design-plates/desig_plate2.png";
+import desigPlate3 from "@/assets/design-plates/desig_plate3.png";
+import desigPlate4 from "@/assets/design-plates/desig_plate4.png";
+import desigPlate5 from "@/assets/design-plates/desig_plate5.png";
+import desigPlate6 from "@/assets/design-plates/desig_plate6.png";
+import desigPlate7 from "@/assets/design-plates/desig_plate7.png";
+import desigPlate8 from "@/assets/design-plates/desig_plate8.png";
+import desigPlate9 from "@/assets/design-plates/desig_plate9.png";
 
 export const DESIGN_PLATE_TILE_IDS = [
   "ocean-wave",

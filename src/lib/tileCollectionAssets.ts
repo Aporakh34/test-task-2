@@ -1,7 +1,7 @@
 import type { StaticImageData } from "next/image";
-import tileGrid1 from "@/assets/tile_grid1.png";
-import tileGrid5 from "@/assets/tile_grid5.png";
-import tileGrid6 from "@/assets/tile_grid6.png";
+import tileGrid1 from "@/assets/tiles/grid/tile_grid1.png";
+import tileGrid5 from "@/assets/tiles/grid/tile_grid5.png";
+import tileGrid6 from "@/assets/tiles/grid/tile_grid6.png";
 import yellowStarCollection from "@/assets/tiles/collections/yellow_star.png";
 
 const OCEAN_WAVE_COLLECTION_IDS = new Set(["ocean-wave", "grid-tile-1"]);

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckoutFormData } from "@/types";
 import {
+  CheckoutFormData,
   INITIAL_CHECKOUT_FORM,
   PAYMENT_METHODS,
   CheckoutFieldErrors,

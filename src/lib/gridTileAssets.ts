@@ -1,13 +1,13 @@
 import type { StaticImageData } from "next/image";
-import tileGrid1 from "@/assets/tile_grid1.png";
-import tileGrid2 from "@/assets/tile_grid2.png";
-import tileGrid3 from "@/assets/tile_grid3.png";
-import tileGrid4 from "@/assets/tile_grid4.png";
-import tileGrid5 from "@/assets/tile_grid5.png";
-import tileGrid6 from "@/assets/tile_grid6.png";
-import tileGrid7 from "@/assets/tile_grid7.png";
-import tileGrid8 from "@/assets/tile_grid8.png";
-import tileGrid9 from "@/assets/tile_grid9.png";
+import tileGrid1 from "@/assets/tiles/grid/tile_grid1.png";
+import tileGrid2 from "@/assets/tiles/grid/tile_grid2.png";
+import tileGrid3 from "@/assets/tiles/grid/tile_grid3.png";
+import tileGrid4 from "@/assets/tiles/grid/tile_grid4.png";
+import tileGrid5 from "@/assets/tiles/grid/tile_grid5.png";
+import tileGrid6 from "@/assets/tiles/grid/tile_grid6.png";
+import tileGrid7 from "@/assets/tiles/grid/tile_grid7.png";
+import tileGrid8 from "@/assets/tiles/grid/tile_grid8.png";
+import tileGrid9 from "@/assets/tiles/grid/tile_grid9.png";
 import { getDesignPlateImage } from "@/lib/designPlateAssets";
 import { getTileAssets } from "@/lib/tileAssets";
 

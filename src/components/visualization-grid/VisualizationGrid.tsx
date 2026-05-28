@@ -7,7 +7,7 @@ import { BORDER_THICK, BORDER_RADIUS, COLOR_TAN } from "./constants";
 
 export default function VisualizationGrid() {
   return (
-    <div className="flex flex-col w-full shrink-0 px-2 pb-2 pt-13 relative overflow-hidden">
+    <div className="flex flex-col w-full shrink-0 px-2 pb-2 pt-13 relative overflow-hidden ">
       <GridPlacementOverlay />
       <div
         className="mx-0 flex flex-col overflow-hidden shrink-0"
@@ -23,7 +23,7 @@ export default function VisualizationGrid() {
         <div className="flex min-h-0 overflow-hidden">
           <div className="flex shrink-0 flex-col pb-1.5">
             <header
-              className="shrink-0 text-center px-3 pt-3 pb-4 xl:pt-4 xl:pb-6 max-[1752px]:hidden"
+              className="shrink-0 text-center px-3 pt-3 pb-4 xl:pt-4 xl:pb-6 "
               style={{ backgroundColor: COLOR_TAN }}
             >
               <h2 className="font-condensed font-bold uppercase text-[21px] xl:text-[24px] tracking-wide text-black leading-tight">

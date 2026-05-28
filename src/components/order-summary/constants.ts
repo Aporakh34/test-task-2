@@ -1,19 +1,6 @@
-import { PaymentMethod } from "@/types";
+import { PaymentMethod, CustomerForm, FieldErrors } from "@/types";
 
-export interface CustomerForm {
-  name: string;
-  phone: string;
-  email: string;
-  address: string;
-  notes: string;
-  cardNumber: string;
-  expiry: string;
-  cvv: string;
-}
-
-export interface FieldErrors {
-  [key: string]: string;
-}
+export type { CustomerForm, FieldErrors };
 
 export type PaymentOption = {
   id: PaymentMethod;

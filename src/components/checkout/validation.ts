@@ -1,5 +1,4 @@
-import { CheckoutFormData } from "@/types";
-import { CheckoutFieldErrors } from "./constants";
+import { CheckoutFormData, CheckoutFieldErrors } from "./constants";
 
 export function validateEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);

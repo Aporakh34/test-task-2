@@ -18,18 +18,19 @@ export interface CartItem {
 
 export type PaymentMethod = "credit_card" | "paypal" | "apple_pay" | "bank_transfer";
 
-export interface CheckoutFormData {
-  firstName: string;
-  lastName: string;
+export interface CustomerForm {
+  name: string;
+  phone: string;
   email: string;
   address: string;
-  city: string;
-  postalCode: string;
-  country: string;
-  paymentMethod: PaymentMethod;
+  notes: string;
   cardNumber: string;
-  cardExpiry: string;
-  cardCvc: string;
+  expiry: string;
+  cvv: string;
+}
+
+export interface FieldErrors {
+  [key: string]: string;
 }
 
 export type GridCell = string | null;

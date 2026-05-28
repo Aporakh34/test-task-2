@@ -11,7 +11,7 @@ export default function TableHeaderCell({
 }) {
   return (
     <th
-      className="py-2 px-0.5 text-center font-condensed font-bold uppercase text-[15px] leading-tight tracking-wide"
+      className="py-2 px-0.5 text-center font-condensed font-bold uppercase text-[15px] leading-tight tracking-wide max-[644px]:text-[12px]"
       style={{
         ...getTableCellBorderStyle({ isFirstColumn, isTopRow: true }),
         backgroundColor: COLOR_TAN,
