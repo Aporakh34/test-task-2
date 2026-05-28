@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* === Core palette === */
+  --color-parchment:       #EDE0C4;
+  --color-parchment-light: #F5EDD8;
+  --color-parchment-dark:  #D9CDB0;
+
+  /* Header (pixel-match mock) */
+  --color-header-bg:       #F2EBD9;
+  --color-header-badge:    #C4A46D;
+  --color-header-user-pill:#3E4A59;
+
+  --color-navy:            #1A2847;
+  --color-navy-mid:        #2B3F6A;
+  --color-navy-light:      #3B5490;
+
+  --color-text:            #1A1A2E;
+  --color-text-muted:      #4A4A5E;
+
+  --color-tile-blue:       #2B4F8F;
+  --color-tile-cream:      #E8DFC4;
+  --color-tile-terracotta: #C47A62;
+  --color-tile-gold:       #E8C44A;
+  --color-tile-fern:       #4A8030;
+
+  --color-white-warm:      #FDFAF5;
+  --color-border:          #1A2847;
+  --border-width:          3px;
+
+  /* Typography — injected by next/font on <html> */
+  --font-sans: var(--font-league);
+  --font-display: var(--font-bebas);
+  --font-condensed: var(--font-roboto-condensed);
+
+  /* Radii */
+  --radius-sm:   2px;
+  --radius-md:   6px;
+  --radius-lg:   10px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-parchment);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a[href],
+[role="button"],
+label[for],
+select,
+summary,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--color-navy);
+}
+
+button:disabled,
+input:disabled,
+select:disabled {
+  cursor: not-allowed;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--color-parchment-dark); }
+::-webkit-scrollbar-thumb { background: var(--color-navy-mid); border-radius: 3px; }
+
+.visualization-grid-scroll {
+  scrollbar-width: none;
+}
+
+.visualization-grid-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Underline-style form inputs (paper-form aesthetic) */
+.input-underline {
+  background: transparent;
+  border: none;
+  border-bottom: var(--border-width) solid var(--color-border);
+  border-radius: 0;
+  padding: 0 0;
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-text);
+  outline: none;
+  width: 100%;
+}
+
+.input-underline::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.5;
+}
+
+.input-underline:focus {
+  border-bottom-color: var(--color-navy);
 }
